@@ -90,5 +90,5 @@ print("Predicting test set...")
 pred_test = svm.predict(twoDtestxArr)
 pred_test_df = pd.DataFrame(pred_test)
 pred_test_df.to_csv("predictions.csv",
-	index_label = "id", header = ["prediction", "class"])
+	index_label = "id")
 
